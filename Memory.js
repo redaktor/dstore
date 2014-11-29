@@ -176,6 +176,7 @@ define([
 			var storage = this.storage;
 			storage.fullData = this.data = data;
 			this._reindex();
+			this.emit('refresh');
 		},
 
 		_reindex: function () {
